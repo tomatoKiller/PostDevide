@@ -1,4 +1,5 @@
-create database if not exists PostDevide;
+drop database  if exists PostDevide;
+create database  if not exists PostDevide default charset utf8;
 
 use PostDevide;
 
@@ -12,4 +13,4 @@ create table think_commodityinfo(
   longitude float(4,1) not null,
   latitude float(4,1) not null,
   accuracy varchar(30) not null
-);
+)engine=MyISAM DEFAULT CHARSET=UTF8;
